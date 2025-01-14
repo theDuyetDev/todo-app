@@ -1,6 +1,7 @@
 import bcrypt from "bcryptjs";
 
 /**
+ * - Hash user password
  *
  * @param {*} password - The plain password to be hashed
  * @returns {Promise<string>} - A promise that resolves to the hash password
@@ -17,6 +18,7 @@ const hashPassword = async (password) => {
 };
 
 /**
+ * - Compare user password with stored password
  *
  * @param {*} password - The plain password to be compared
  * @param {*} hashedPassword - The hashed password to be compared
